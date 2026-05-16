@@ -18,6 +18,13 @@ let sixth = 'love';
 let seventh = 'it!';
 
 //code here
+//halo sir disini saya buat 2 macam,  mohon untuk di cek ya. terima kasih
+// cara pertama (langsung di console.log)
+console.log(word + " " + second + " " + third + " " + fourth + " " + fifth + " " + sixth + " " + seventh);
+// cara kedua (menggunakan variable word untuk menampung hasil)
+word = word + " " + second + " " + third + " " + fourth + " " + fifth + " " + sixth + " " + seventh;
+console.log(word);
+
 ```
 ## Soal 2. Index Accessing - 1 by 1
 ```js
