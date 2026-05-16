@@ -7,14 +7,15 @@ singkatnya sih disini belajar if else, namun nanti ada soal yang dimana kamu har
 yak Buka aja W3school dan kerjakan soal soal berikut
 
 ## Soal 1:
+
 ```js
-// Kamu diminta untuk memprogram suatu game sederhana, Proxytia namanya. 
-// Untuk memulai game itu diperlukan 2 variabel (untuk sekarang), 
-// yaitu nama dan peran. Variabel peran harus memiliki isi data, 
+// Kamu diminta untuk memprogram suatu game sederhana, Proxytia namanya.
+// Untuk memulai game itu diperlukan 2 variabel (untuk sekarang),
+// yaitu nama dan peran. Variabel peran harus memiliki isi data,
 // bila nama kosong, pemain akan diberikan peringatan berupa "nama wajib diisi"
-// bila kosong pemain akan diberikan peringatan berupa "Pilih Peranmu untuk memulai game". 
-// Terdapat 3 peran berbeda yaitu Ksatria, Tabib, dan Penyihir. 
-// Tugas Anda adalah untuk membuat program yang mengecek isi variabel 
+// bila kosong pemain akan diberikan peringatan berupa "Pilih Peranmu untuk memulai game".
+// Terdapat 3 peran berbeda yaitu Ksatria, Tabib, dan Penyihir.
+// Tugas Anda adalah untuk membuat program yang mengecek isi variabel
 // peran serta mengeluarkan respon sesuai isi variabel tersebut.
 //ada 4 jenis respons sesuai dengan 3 jenis peran yaitu
 //halo Ksatria ${nama} , kamu dapat menyerang dengan senjatamu!
@@ -27,15 +28,51 @@ yak Buka aja W3school dan kerjakan soal soal berikut
 
 // algoritma
 //isi algoritma mu disini (AWAS KALO GA DI ISI!!!!)
+// 1. Mengecak apakah nama player kosong, jika kosong tampilkan peringatan
+// 2. Mengecak apakah peran player kosong, jika kosong tampilkan peringatan
+// 3. Jika kedua variabel memiliki value, cek value variabel peran :
+//    Jika "Ksatria" -> sapa dengan Ksatria serta di ikuti nama dan tugas
+//    Jika "Tabib" -> sapa dengan Tabib serta di ikuti nama dan tugas
+//    Jika "Penyihir" -> sapa dengan Penyihir serta di ikuti nama dan tugas
+//    Jika value variabel peran kosong -> sapa dengan mengaggap bot
 
-
-let nama = "", peran = "";
+let nama = "",
+  peran = "";
 
 //code disini gunakan console.log untuk outputnya
-
+let nama = "Wisnu",
+  peran = "Tabib";
+//code disini gunakan console.log untuk outputnya
+console.log("Selamat datang di Game Proxytia");
+if (nama === "") {
+  console.log("Nama harus diisi!");
+} else if (peran === "") {
+  console.log(`Pilih peranmu ${nama} untuk memulai game!`);
+  listRole();
+} else {
+  if (peran === "Ksatria") {
+    console.log(`Halo Ksatria ${nama}, kamu dapat menyerang dengan senjatamu!`);
+  } else if (peran === "Tabib") {
+    console.log(`Halo Tabib ${nama}, kamu akan membantu temanmu yang terluka`);
+  } else if (peran === "Penyihir") {
+    console.log(
+      `Halo Penyihir ${nama}, ciptakan keajaiban yang membantu kemenanganmu!`,
+    );
+  } else {
+    console.log(
+      `Tapi kayaknya kamu jadi bot aja ya, peran yang kamu pilih ga ada`,
+    );
+  }
+}
+function listRole() {
+  console.log("1. Ksatria");
+  console.log("2. Tabib");
+  console.log("3. Penyihir");
+}
 ```
 
 ## Soal 2
+
 ```js
 // Kamu akan diberikan sebuah tanggal dalam tiga variabel, yaitu hari, bulan, dan tahun. Disini kamu diminta untuk membuat format tanggal. Misal tanggal yang diberikan adalah hari 1, bulan 5, dan tahun 1945. Maka, output yang harus kamu proses adalah menjadi 1 Mei 1945.
 
@@ -58,8 +95,9 @@ let tahun = 2001; // assign nilai variabel tahun disini! (dengan angka antara 19
 ```
 
 ---
+
 video biar rada paham lah, soalnya ini awal kepahitan ngoding wkwk:
 
 [Video tutor by Harkon](https://youtu.be/-YlMePibR6Y)
 
-*sisanya kalian googling aja ya ges yak*
+_sisanya kalian googling aja ya ges yak_
