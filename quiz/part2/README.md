@@ -108,6 +108,26 @@ let word3 = "wow JavaScript is so cool";
 let exampleFirstWord3 = word3.substring(0, 3);
 
 console.log("First Word: " + exampleFirstWord3);
+
+let word = "wow JavaScript is so cool";
+let exampleFirstWord3 = word.substring(0, 3);
+
+console.log("First Word: " + exampleFirstWord3);
+//code di bawah sir
+let secondWord = word.substring(4, 14);
+console.log("Second Word: " + secondWord);
+let thirdWord = word.substring(15, 17);
+console.log("Third Word: " + thirdWord);
+let fourthWord = word.substring(18, 20);
+console.log("Fourth Word: " + fourthWord);
+let fifthWord = word.substring(21, 25);
+console.log("Fifth Word: " + fifthWord);
+// ekspektasi output
+// First Word: wow
+// Second Word: JavaScript
+// Third Word: is
+// Fourth Word: so
+// Fifth Word: cool
 ```
 
 ## Soal 4. Breaking Sentence (yet Again) and Count Each Length
