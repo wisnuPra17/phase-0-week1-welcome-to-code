@@ -66,6 +66,13 @@ console.log(temp);
 
 // Apabila angka counter adalah angka genap, tuliskan GENAP
 // Apabila angka counter adalah angka ganjil, tuliskan GANJIL
+// ini sir jawaban saya
+let i = 1;
+while (i <= 100){
+    if (i % 2 === 0) console.log(i + " adalah angka GENAP");
+    else console.log(i + " adalah angka GANJIL");
+    i++;
+}
 ```
 ## Soal 4. counter kelipatan
 ```js
