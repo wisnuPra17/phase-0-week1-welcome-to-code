@@ -7,7 +7,7 @@ let input = 5;
 //****
 //*****
 let star = "";
-for (let i = 0; i< 5; i++) {   
+for (let i = 0; i < input; i++) {   
     for (let j = 0; j <= i; j++) {  
         star += "*";
     }
